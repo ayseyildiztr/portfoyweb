@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portföyüm - Anasayfa</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+
+
+</head>
+<style>
+    /* İletişim Sayfası Genel Stil */
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    flex: 1;
+    margin-right: 50px;
+    padding: 20px;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    color: #ff4081;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links .social-icon {
+    display: inline-block;
+    background-color: #ff4081;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.social-links .social-icon:hover {
+    background-color: #d8376e;
+}
+
+/* İletişim Formu */
+.contact-form {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    color: #ff4081;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.submit-btn {
+    background-color: #ff4081;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #d8376e;
+}
+
+</style>
+
+
+
+
+<section class="contact-section">
+    <div class="contact-container">
+        <!-- İletişim Bilgileri -->
+        <div class="contact-info">
+            <h2>İletişim Bilgileri</h2>
+            <p>Herhangi bir sorunuz ya da proje fikriniz varsa bana ulaşın!</p>
+            <ul>
+                <li><strong>Email:</strong> ayse@example.com</li>
+                <li><strong>Telefon:</strong> +90 555 555 5555</li>
+                <li><strong>Adres:</strong> İstanbul, Türkiye</li>
+            </ul>
+            <div class="social-links">
+                <a href="https://www.instagram.com" class="social-icon">Instagram</a>
+                <a href="https://www.linkedin.com" class="social-icon">LinkedIn</a>
+                <a href="https://www.github.com" class="social-icon">GitHub</a>
+            </div>
+        </div>
+
+        <!-- İletişim Formu -->
+        <div class="contact-form">
+            <h2>Bana Ulaşın</h2>
+            <form action="#">
+                <div class="form-group">
+                    <label for="name">Adınız:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Adresiniz:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mesajınız:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Gönder</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <!-- Kısa Tanıtım -->
+        <div class="footer-about">
+            <h3>Hakkımda</h3>
+            <p>Web ve sosyal medya tasarımı alanında yeni projeler üreten, yaratıcı çözümler sunan bir tasarımcıyım. Küçük adımlarla büyük projelere ulaşmayı hedefliyorum.</p>
+        </div>
+        
+        <!-- İletişim Bilgileri -->
+        <div class="footer-contact">
+            <h3>İletişim</h3>
+            <ul>
+                <li><strong>Email:</strong> ayseyldztr@gmail.com</li>
+                <li><strong>Telefon:</strong> +90 551 *** ** **</li>
+            </ul>
+        </div>
+
+        <!-- Sosyal Medya Linkleri -->
+        <div class="footer-social">
+            <h3>Beni Takip Edin</h3>
+            <ul>
+                <li><a href="https://www.instagram.com">Instagram</a></li>
+                <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+                <li><a href="https://www.github.com">GitHub</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Telif Hakkı -->
+    <div class="footer-bottom">
+        <p>© 2024 Ayşe'nin Portföyü. Tüm hakları saklıdır.</p>
+    </div>
+</footer>
